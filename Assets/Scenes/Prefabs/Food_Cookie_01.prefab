@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8059620548860054176}
   - component: {fileID: 8059620548859086944}
   - component: {fileID: -6410012434815339642}
+  - component: {fileID: -6282266431114344390}
   m_Layer: 0
   m_Name: Food_Cookie_01
   m_TagString: Untagged
@@ -95,3 +96,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 40
+--- !u!114 &-6282266431114344390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8059620548856895136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89ac359fe4f8aa548ab8d1253f2f298e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
