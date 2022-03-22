@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
     public float speed = 20f;
     public float xRange = 10f;
 
+    public GameObject projectilePrefab;
+
     void Update()
     {
         // Keep the player in bounds
@@ -21,5 +23,11 @@ public class PlayerController : MonoBehaviour
         }
         horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * Time.deltaTime * horizontalInput * speed);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            // Launch a projectile from the player
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+        }
     }
 }
