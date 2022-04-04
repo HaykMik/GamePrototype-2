@@ -7,8 +7,8 @@ public class PlayerController : MonoBehaviour
     private float horizontalInput;
     private float verticalInput;
     private float speed = 20f;
-    private float xRange = 20f;
-    private float zMinBound = -2f;
+    private float xRange = 23f;
+    private float zMinBound = -1f;
     private float zMaxBound = 16f;
 
     public GameObject projectilePrefab;
