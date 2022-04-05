@@ -13,12 +13,12 @@ GameObject:
   - component: {fileID: 8059620548859086944}
   - component: {fileID: -6410012434815339642}
   - component: {fileID: -6282266431114344390}
-  - component: {fileID: -2590153807891773236}
   - component: {fileID: 7814070399632680609}
+  - component: {fileID: -2590153807891773236}
   - component: {fileID: -2992958899030416016}
   m_Layer: 0
-  m_Name: Food_Cookie_01
-  m_TagString: Untagged
+  m_Name: Cookie
+  m_TagString: Cookie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,6 +111,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89ac359fe4f8aa548ab8d1253f2f298e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7814070399632680609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8059620548856895136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea9a8a34732ba5340ac103a30e48e9d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &-2590153807891773236
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -124,18 +136,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.52475095, y: 0.06719126, z: 0.52475107}
   m_Center: {x: 0, y: -0.0000000018626451, z: -0.000000074505806}
---- !u!114 &7814070399632680609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8059620548856895136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea9a8a34732ba5340ac103a30e48e9d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &-2992958899030416016
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -15,20 +15,52 @@ public class DestroyOutOfBounds : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
         if (transform.position.z < lowerBound)
         {
-            Debug.Log("Game Over!");
             Destroy(gameObject);
+            if (ScoreLivesLog.lives >= 2)
+            {
+                ScoreLivesLog.lives--;
+                Debug.Log($"Lives = {ScoreLivesLog.lives}");
+            } else
+            {
+                ScoreLivesLog.lives--;
+                Debug.Log($"Lives = {ScoreLivesLog.lives}");
+                Debug.Log("Game Over!");
+            }
         }
+
         if (transform.position.x > sidesBound)
         {
-            Debug.Log("Game Over!");
             Destroy(gameObject);
+            if (ScoreLivesLog.lives >= 2)
+            {
+                ScoreLivesLog.lives--;
+                Debug.Log($"Lives = {ScoreLivesLog.lives}");
+            }
+            else
+            {
+                ScoreLivesLog.lives--;
+                Debug.Log($"Lives = {ScoreLivesLog.lives}");
+                Debug.Log("Game Over!");
+            }
         }
+
         if (transform.position.x < -sidesBound)
         {
-            Debug.Log("Game Over!");
             Destroy(gameObject);
+            if (ScoreLivesLog.lives >= 2)
+            {
+                ScoreLivesLog.lives--;
+                Debug.Log($"Lives = {ScoreLivesLog.lives}");
+            }
+            else
+            {
+                ScoreLivesLog.lives--;
+                Debug.Log($"Lives = {ScoreLivesLog.lives}");
+                Debug.Log("Game Over!");
+            }
         }
     }
 }

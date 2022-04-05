@@ -3143,7 +3143,7 @@ GameObject:
   - component: {fileID: -3297093421952270788}
   - component: {fileID: 118030239}
   m_Layer: 0
-  m_Name: Dog_Pug_01
+  m_Name: Pug
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
