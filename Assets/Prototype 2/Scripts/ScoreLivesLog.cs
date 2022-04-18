@@ -5,6 +5,7 @@ using UnityEngine;
 public class ScoreLivesLog : MonoBehaviour
 {
     internal static int score;
+    internal static int valueScore = 1;
     internal static int lives = 3;
 
     public void Start()
