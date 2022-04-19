@@ -6,11 +6,7 @@ public class DetectCollisions : MonoBehaviour
 {
     public void OnTriggerEnter(Collider other)
     {
-        Destroy(other.gameObject);
+        other.GetComponent<HungerBar>().FeedAnimal(1);
         Destroy(gameObject);
-        
-        // Add up score and show it
-        ScoreLivesLog.score += ScoreLivesLog.valueScore;
-        Debug.Log($"Score = {ScoreLivesLog.score}");
     }
 }
